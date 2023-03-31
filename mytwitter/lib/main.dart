@@ -22,6 +22,23 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text('T.Ikeda@TIkeda93820944'),
+                  SizedBox(width: 8),
+                  Text('2023/04/01'),
+                ],
+              ),
+              SizedBox(height: 4),
+              Text('最高でした')
+            ],
+          ),
+        ),
       ),
     );
   }
