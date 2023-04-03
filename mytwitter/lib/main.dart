@@ -41,6 +41,14 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
+        bottomNavigationBar:
+            BottomNavigationBar(items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'ホーム'),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'お気に入り'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.notifications), label: 'お知らせ'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'アカウント'),
+        ], type: BottomNavigationBarType.fixed),
       ),
     );
   }
@@ -60,7 +68,7 @@ class TweetTile extends StatelessWidget {
         children: [
           CircleAvatar(
             backgroundImage: NetworkImage(
-                'https://pbs.twimg.com/profile_images/1626936992729821184/JpNi95LG_400x400.jpg'),
+                'https://pbs.twimg.com/profile_images/1642518440283107329/oWgy--e3_400x400.jpg'),
           ),
           SizedBox(width: 8),
           Column(
